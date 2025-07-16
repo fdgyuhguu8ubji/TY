@@ -75,7 +75,7 @@ CHECK_ONCE = []
 ST1 = [ 
     [
         InlineKeyboardButton(text="Updates Channel", url="https://t.me/Jx_Bots"),
-        InlineKeyboardButton(text="Support Grp", url="https://t.me/+jqaBxdIiEt80NTY0")
+        InlineKeyboardButton(text="Support Grp", url="https://t.me/Jx_Bots")
     ],
     [
         InlineKeyboardButton(f"About", callback_data="About"),
