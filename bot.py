@@ -74,7 +74,7 @@ CHECK_ONCE = []
 
 ST1 = [ 
     [
-        InlineKeyboardButton(text="Updates Channel", url="https://t.me/T_Y_Tricks"),
+        InlineKeyboardButton(text="Updates Channel", url="https://t.me/Jx_Bots"),
         InlineKeyboardButton(text="Support Grp", url="https://t.me/+jqaBxdIiEt80NTY0")
     ],
     [
@@ -118,7 +118,7 @@ PLANS_TEXT = '''**📋 Here You Will Find All of Our Premium Plans (All Availabl
 • **Payment methods accepted from:** Pakistan 🇵🇰, Bangladesh 🇧🇩, India 🇮🇳  
 • **Other Methods:** PayPal, Binance, Crypto
 
-📩 **Contact to Buy Subscription:** [@TY009X](https://t.me/TY009X)
+📩 **Contact to Buy Subscription:** [@Jx_Support](https://t.me/Jx_Support)
 '''
 
 HELP_TEXT = """Here You can find all available Commands:-
@@ -144,7 +144,7 @@ ABOUT_TEXT = """**🄳🅁🄼 🄳🄾🅆🄽🄻🄾🄳🄴 🄱🄾🅃
   ➺ Language  : `English`
   ➺ Owner        : `TY`
   ➺ Release     : `India`
-  ➺ Developer  : @TY009X
+  ➺ Developer  : @Jx_Support
 
 ╚════════✧❁✧════════➩"""
 
@@ -155,7 +155,7 @@ async def filter_subscription(_, __, m):
     if chkUser:
         return True
     await mydb.add_user(m.from_user.id)
-    await m.reply_text("❎ You do not have a subscription\n\n📞 Contact us to buy a subscription [TY](https://t.me/TY009X)")
+    await m.reply_text("❎ You do not have a subscription\n\n📞 Contact us to buy a subscription [@Jx_Support](https://t.me/Jx_Support)")
     return False
 
 static_auth_filter = filters.create(filter_subscription)
@@ -191,7 +191,7 @@ async def tg_subget_Handler(bot: Client, message: Message):
     await message.reply_text(
         "**🎬 DRM OTT Downloader Bot**\n\n"
         "🔹 **Supported Platforms:**\n"
-        "  ├ 📺 **Zee5**\n"
+        "  ├ 📺 **Zee5 / Sonyliv**\n"
         "  └ 🔥 **JioCinema / Hotstar**\n\n"
         "Send a link to get started."
     )
@@ -248,7 +248,7 @@ async def get_subscription(user_id):
 
 ⬆️ If you want to increase the subscription then see the plan now and contact us admin
 
-  **🥰 @TY009X Contact owner for updating subscription.**
+  **🥰 @Jx_Support Contact owner for updating subscription.**
 
                **Have a Nice day 😊** """
     else:
@@ -388,9 +388,9 @@ You can use me to Download DRM protected links to Telegram ⤵️
 
 Here I support Direct DRM links of Zee5, Hotstar etc..................
 
-I can also DRM protected links transloaded from @TY009X 
+I can also DRM protected links transloaded from @Jx_Support 
 
-If you found any issue please contact Support @TY009X**
+If you found any issue please contact Support @Jx_Support**
 
 
 **Bot Uptime:**  `{strftime("hours:%H minutes:%M and seconds:%S" , gmtime(time() - BOT_START_TIME))} ago`""", reply_markup=InlineKeyboardMarkup(ST1))
